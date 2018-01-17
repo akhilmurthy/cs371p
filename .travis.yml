@@ -36,6 +36,15 @@ before_script:
     - date
     - uname -a
     - printenv | sort
+    - clang-check  --version
+    - clang-format --version
+    - cmake        --version
+    - doxygen      --version
+    - g++-7        --version
+    - gcov         --version
+    - git          --version
+    - make         --version
+    - ls -al
     - cat makefile
 
 script:
