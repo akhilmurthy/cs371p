@@ -41,7 +41,7 @@ before_script:
     - cmake        --version
     - doxygen      --version
     - g++-7        --version
-    - gcov         --version
+    - gcov-7       --version
     - git          --version
     - make         --version
     - ls -al
