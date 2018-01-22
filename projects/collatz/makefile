@@ -1,7 +1,5 @@
 .DEFAULT_GOAL := all
 
-# you must replace GitHubID with your GitHubID
-# make check will fail until the last three items on this list
 FILES :=                                  \
     .gitignore                            \
     collatz-tests                         \
@@ -13,10 +11,13 @@ FILES :=                                  \
     RunCollatz.c++                        \
     RunCollatz.in                         \
     RunCollatz.out                        \
-    TestCollatz.c++                       \
-    .travis.yml                           \
-    collatz-tests/GitHubID-RunCollatz.in  \
-    collatz-tests/GitHubID-RunCollatz.out
+    TestCollatz.c++
+
+# uncomment these three lines when you've created those files
+# you must replace GitHubID with your GitHubID
+#    .travis.yml                           \
+#    collatz-tests/GitHubID-RunCollatz.in  \
+#    collatz-tests/GitHubID-RunCollatz.out
 
 collatz-tests:
 	git clone https://github.com/cs371pt-spring-2018/collatz-tests.git

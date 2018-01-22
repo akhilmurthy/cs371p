@@ -30,3 +30,4 @@ travis:
 	make
 	ls -al
 	make run
+	ls -al
