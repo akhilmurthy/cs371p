@@ -44,6 +44,7 @@ before_script:
     - gcov-7       --version
     - git          --version
     - make         --version
+    - valgrind     --version
     - ls -al
     - cat makefile
 

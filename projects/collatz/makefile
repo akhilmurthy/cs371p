@@ -80,7 +80,7 @@ format:
 	clang-format -i RunCollatz.c++
 	clang-format -i TestCollatz.c++
 
-run: RunCollatz.c++x TestCollatz.x
+run: RunCollatz.c++x TestCollatz.c++x
 
 scrub:
 	make clean
