@@ -1,12 +1,10 @@
 .DEFAULT_GOAL := all
 
 # you must replace GitHubID with your GitHubID
+# make check will fail until the last three items on this list
 FILES :=                                  \
     .gitignore                            \
-    .travis.yml                           \
     collatz-tests                         \
-    collatz-tests/GitHubID-RunCollatz.in  \
-    collatz-tests/GitHubID-RunCollatz.out \
     Collatz.c++                           \
     Collatz.h                             \
     Collatz.log                           \
@@ -15,7 +13,10 @@ FILES :=                                  \
     RunCollatz.c++                        \
     RunCollatz.in                         \
     RunCollatz.out                        \
-    TestCollatz.c++
+    TestCollatz.c++                       \
+    .travis.yml                           \
+    collatz-tests/GitHubID-RunCollatz.in  \
+    collatz-tests/GitHubID-RunCollatz.out
 
 collatz-tests:
 	git clone https://github.com/cs371pt-spring-2018/collatz-tests.git
@@ -26,7 +27,7 @@ html: Doxyfile Collatz.h
 Collatz.log:
 	git log > Collatz.log
 
-# you must manually edit Doxyfile and
+# you must edit Doxyfile and
 # set EXTRACT_ALL     to YES
 # set EXTRACT_PRIVATE to YES
 # set EXTRACT_STATEIC to YES
@@ -58,15 +59,13 @@ all: RunCollatz TestCollatz
 check: $(FILES)
 
 clean:
-	rm -f  *.gcda
-	rm -f  *.gcno
-	rm -f  *.gcov
-	rm -f  *.plist
-	rm -f  *.tmp
-	rm -f  RunCollatz
-	rm -f  TestCollatz
-	rm -rf *.dSYM
-	rm -rf latex
+	rm -f *.gcda
+	rm -f *.gcno
+	rm -f *.gcov
+	rm -f *.plist
+	rm -f *.tmp
+	rm -f RunCollatz
+	rm -f TestCollatz
 
 config:
 	git config -l
@@ -103,4 +102,4 @@ travis: collatz-tests html Collatz.log
 	ls -al
 	make run
 	ls -al
-	-make -r check
+	make -r check

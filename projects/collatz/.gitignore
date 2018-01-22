@@ -1,13 +1,11 @@
 .DS_Store
-*.dSYM
 *.gcda
 *.gcno
 *.gcov
 *.plist
+*.tmp
 collatz-tests
 Doxyfile
 Icon?
 RunCollatz
-RunCollatz.tmp
 TestCollatz
-TestCollatz.tmp
