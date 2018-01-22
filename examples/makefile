@@ -9,7 +9,7 @@ FILES :=                    \
 	g++-7 -fprofile-arcs -ftest-coverage -pedantic -std=c++14 -Wall -Weffc++ -Wextra $< -o $@ -lgtest -lgtest_main -pthread
 
 %.c++x: %
-	valgrind $<
+	valgrind ./$<
 	gcov-7 -b $<.c++ | grep -A 5 "File '$<.c++'"
 
 all: $(FILES)
