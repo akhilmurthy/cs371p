@@ -7,5 +7,6 @@
 collatz-tests
 Doxyfile
 Icon?
+latex
 RunCollatz
 TestCollatz

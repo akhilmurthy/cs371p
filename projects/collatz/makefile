@@ -88,6 +88,7 @@ scrub:
 	rm -f  Doxyfile
 	rm -rf collatz-tests
 	rm -rf html
+	rm -rf latex
 
 status:
 	make clean
