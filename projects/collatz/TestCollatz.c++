@@ -32,8 +32,8 @@ using namespace std;
 TEST(CollatzFixture, read) {
     string s("1 10\n");
     const pair<int, int> p = collatz_read(s);
-    ASSERT_EQ( 1, p.first);
-    ASSERT_EQ(10, p.second);}
+    ASSERT_EQ(p.first,   1);
+    ASSERT_EQ(p.second, 10);}
 
 // ----
 // eval
@@ -62,7 +62,7 @@ TEST(CollatzFixture, eval_4) {
 TEST(CollatzFixture, print) {
     ostringstream w;
     collatz_print(w, 1, 10, 20);
-    ASSERT_EQ("1 10 20\n", w.str());}
+    ASSERT_EQ(w.str(), "1 10 20\n");}
 
 // -----
 // solve
