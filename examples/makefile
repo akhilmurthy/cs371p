@@ -1,7 +1,12 @@
 .DEFAULT_GOAL := all
 
 FILES :=                    \
-    Hello
+    Hello                   \
+    UnitTests3              \
+    Coverage1               \
+    Coverage2               \
+    Coverage3               \
+    IsPrime1
 
 %: %.c++
 	-clang-check -extra-arg=-std=c++11          $< --
