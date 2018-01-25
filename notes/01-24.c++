@@ -6,11 +6,13 @@
 if the input is odd: 3n + 1
 */
 
+/*
 (3n + 1) / 2
 3n/2 + 1/2
-n + n/2 + 1/2 // because / is integer division
+n + n/2 + 1/2, because / is integer division
 n + n/2 + 1
 n + (n >> 1) + 1
+*/
 
 b = 10
 e = 100
