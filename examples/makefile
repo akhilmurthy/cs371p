@@ -6,7 +6,7 @@ FILES :=                    \
     Coverage1               \
     Coverage2               \
     Coverage3               \
-    IsPrime1
+    IsPrime
 
 %: %.c++
 	-clang-check -extra-arg=-std=c++11          $< --
