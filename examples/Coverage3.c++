@@ -22,7 +22,7 @@ int cycle_length (int n) {
     return c;}
 
 TEST(CoverageFixture, test) {
-    ASSERT_EQ(8, cycle_length(3));}
+    ASSERT_EQ(cycle_length(3), 8);}
 
 /*
 % g++-7 -fprofile-arcs -ftest-coverage -pedantic -std=c++14 -Wall -Weffc++ -Wextra Coverage3.c++ -o Coverage3 -lgtest -lgtest_main -pthread

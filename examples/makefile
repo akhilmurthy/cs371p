@@ -7,7 +7,9 @@ FILES :=                    \
     Coverage2               \
     Coverage3               \
     IsPrime                 \
-    IsPrimeT
+    IsPrimeT                \
+    Exceptions              \
+    StrCmp
 
 %: %.c++
 	-clang-check -extra-arg=-std=c++11          $< --

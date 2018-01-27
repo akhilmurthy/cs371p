@@ -69,6 +69,8 @@ sync:
     --include "Coverage3.c++"              \
     --include "IsPrime.c++"                \
     --include "IsPrimeT.c++"               \
+    --include "Exceptions.c++"             \
+    --include "StrCmp.c++"                 \
     --exclude "*"                          \
     ../../examples/c++/ examples
 	@rsync -r -t -u -v --delete            \
