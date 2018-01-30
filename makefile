@@ -80,7 +80,6 @@ sync:
     --include "RunCollatz.in"              \
     --include "RunCollatz.out"             \
     --include "TestCollatz.c++"            \
-    --include "TestCollatz.out"            \
     --exclude "*"                          \
     ../../projects/c++/collatz/ projects/collatz
 
