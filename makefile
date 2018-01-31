@@ -70,6 +70,7 @@ sync:
     --include "IsPrime.c++"                \
     --include "IsPrimeT.c++"               \
     --include "Exceptions.c++"             \
+    --include "Incr.c++"                   \
     --include "StrCmp.c++"                 \
     --exclude "*"                          \
     ../../examples/c++/ examples
