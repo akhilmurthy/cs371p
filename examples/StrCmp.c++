@@ -10,15 +10,16 @@
 
 using namespace std;
 
+void test () {
+    assert(strcmp("",    "")    == 0);
+    assert(strcmp("abc", "abc") == 0);
+    assert(strcmp("abc", "ab")  >  0);
+    assert(strcmp("abc", "aba") >  0);
+    assert(strcmp("ab",  "abc") <  0);
+    assert(strcmp("aba", "abc") <  0);}
+
 int main () {
     cout << "StrCmp.c++" << endl;
-
-    assert(strcmp("",    "")    ==  0);
-    assert(strcmp("abc", "abc") ==  0);
-    assert(strcmp("abc", "aba") ==  1);
-    assert(strcmp("aba", "abc") == -1);
-    assert(strcmp("abc", "ab")  ==  1);
-    assert(strcmp("ab",  "abc") == -1);
-
+    test();
     cout << "Done." << endl;
     return 0;}

@@ -71,6 +71,7 @@ sync:
     --include "IsPrimeT.c++"               \
     --include "Exceptions.c++"             \
     --include "Incr.c++"                   \
+    --include "IncrH.c++"                  \
     --include "StrCmp.c++"                 \
     --exclude "*"                          \
     ../../examples/c++/ examples
