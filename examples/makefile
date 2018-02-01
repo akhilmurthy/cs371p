@@ -9,6 +9,7 @@ FILES :=                    \
     IsPrime                 \
     IsPrimeT                \
     Exceptions              \
+    IncrT                   \
     StrCmp
 
 %: %.c++
