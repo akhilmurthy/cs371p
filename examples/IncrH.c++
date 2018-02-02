@@ -9,10 +9,10 @@
 
 using namespace std;
 
-#define TEST1
-#define TEST2
-#define TEST3
-#define TEST4
+// #define TEST1
+// #define TEST2
+// #define TEST3
+// #define TEST4
 
 #ifdef TEST1
 void test1 () {
