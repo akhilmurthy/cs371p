@@ -10,7 +10,8 @@ FILES :=                    \
     IsPrimeT                \
     Exceptions              \
     IncrT                   \
-    StrCmp
+    StrCmp                  \
+    StrCmpT
 
 %: %.c++
 	-clang-check -extra-arg=-std=c++11          $< --
