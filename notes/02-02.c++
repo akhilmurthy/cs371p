@@ -31,7 +31,7 @@ int main () {
     f("abc");
     f(2);             // not ok
 
-# Java
+// Java
 
 class Weihan extends Throwable {}
 
@@ -39,7 +39,7 @@ class T {
     ...
     throw new Weihan();
 
-# C++
+// C++
 
 class Weihan {}
 
@@ -52,11 +52,10 @@ two tokens: *, &
 two contexts: next to a type, next to a variable
 */
 
-
 int i = 2;
 int j = i;
 ++j;
-cout << i; // 2
+cout << i;   // 2
 
 int  i = 2;
 int* p = i;  // not ok
@@ -75,58 +74,3 @@ int& r = i;
 cout << r;   // 3
 ++r;
 cout << i;   // 4
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
