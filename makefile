@@ -74,6 +74,7 @@ sync:
     --include "IncrH.c++"                  \
     --include "IncrT.c++"                  \
     --include "StrCmp.c++"                 \
+    --include "StrCmpH.c++"                \
     --exclude "*"                          \
     ../../examples/c++/ examples
 	@rsync -r -t -u -v --delete            \
