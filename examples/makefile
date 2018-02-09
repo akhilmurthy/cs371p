@@ -11,7 +11,10 @@ FILES :=                    \
     Exceptions              \
     IncrT                   \
     StrCmp                  \
-    StrCmpT
+    StrCmpT                 \
+    Variables               \
+    Arguments               \
+    Consts
 
 %: %.c++
 	-clang-check -extra-arg=-std=c++11          $< --
