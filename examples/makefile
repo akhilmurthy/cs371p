@@ -14,7 +14,10 @@ FILES :=                    \
     StrCmpT                 \
     Variables               \
     Arguments               \
-    Consts
+    Consts                  \
+    Arrays                  \
+    Equal                   \
+    Types
 
 %: %.c++
 	-clang-check -extra-arg=-std=c++11          $< --

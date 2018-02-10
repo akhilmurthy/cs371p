@@ -19,19 +19,43 @@ bool is_prime (int n) {
             return false;
     return true;}
 
-void test () {
-    assert(!is_prime( 1));
-    assert(!is_prime( 2));
-    assert( is_prime( 3));
-    assert(!is_prime( 4));
-    assert( is_prime( 5));
-    assert( is_prime( 7));
-    assert( is_prime( 9));
-    assert(!is_prime(27));
+void test1 () {
+    assert(!is_prime( 1));}
+
+void test2 () {
+    assert(!is_prime( 2));}
+
+void test3 () {
+    assert( is_prime( 3));}
+
+void test4 () {
+    assert(!is_prime( 4));}
+
+void test5 () {
+    assert( is_prime( 5));}
+
+void test6 () {
+    assert( is_prime( 7));}
+
+void test7 () {
+    assert( is_prime( 9));}
+
+void test8 () {
+    assert(!is_prime(27));}
+
+void test9 () {
     assert( is_prime(29));}
 
 int main () {
     cout << "IsPrime.c++" << endl;
-    test();
+    test1();
+    test2();
+    test3();
+    test4();
+    test5();
+    test6();
+    test7();
+    test8();
+    test9();
     cout << "Done." << endl;
     return 0;}

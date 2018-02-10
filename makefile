@@ -79,6 +79,9 @@ sync:
     --include "Variables.c++"              \
     --include "Arguments.c++"              \
     --include "Consts.c++"                 \
+    --include "Arrays.c++"                 \
+    --include "Equal.c++"                  \
+    --include "Types.c++"                  \
     --exclude "*"                          \
     ../../examples/c++/ examples
 	@rsync -r -t -u -v --delete            \
