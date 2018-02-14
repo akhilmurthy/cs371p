@@ -54,8 +54,8 @@ const int* const cpc;
 const int* const cpc = &ci;
 cpc = &cj;                  // not ok
 const int* const cqc = &i;
-++*cpc;
-++*cqc;
+++*cpc;                     // not ok
+++*cqc;                     // not ok
 
 int* const p = new int[100];
 ++p;

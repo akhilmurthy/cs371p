@@ -1,14 +1,26 @@
+// -----------
+// StrCmpH.c++
+// -----------
+
+// http://en.cppreference.com/w/c/string/byte/strcmp
+
 #include <cassert>  // assert
 #include <iostream> // cout, endl
 
 using namespace std;
 
-// #define TEST1
-// #define TEST2
-// #define TEST3
-// #define TEST4
-// #define TEST5
-// #define TEST6
+#define TEST1
+#define TEST2
+#define TEST3
+#define TEST4
+#define TEST5
+#define TEST6
+
+int my_strcmp (const char* a, const char* b) {
+    while ((*a != 0) && (*a == *b)) {
+        ++a;
+        ++b;}
+    return (*a - *b);}
 
 #ifdef TEST1
 void test1 () {

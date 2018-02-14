@@ -1,6 +1,6 @@
-// --------
-// Incr.c++
-// --------
+// ---------
+// IncrH.c++
+// ---------
 
 // http://en.cppreference.com/w/cpp/language/operator_incdec
 
@@ -9,10 +9,18 @@
 
 using namespace std;
 
-// #define TEST1
-// #define TEST2
-// #define TEST3
-// #define TEST4
+#define TEST1
+#define TEST2
+#define TEST3
+#define TEST4
+
+int& pre_incr (int& r) {
+    return r += 1;}
+
+int post_incr (int& r) {
+    int v = r;
+    r += 1;
+    return v;}
 
 #ifdef TEST1
 void test1 () {

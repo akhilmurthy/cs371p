@@ -81,6 +81,8 @@ sync:
     --include "Consts.c++"                 \
     --include "Arrays.c++"                 \
     --include "Equal.c++"                  \
+    --include "Copy.c++"                   \
+    --include "Fill.c++"                   \
     --include "Types.c++"                  \
     --exclude "*"                          \
     ../../examples/c++/ examples
