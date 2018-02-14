@@ -36,6 +36,10 @@ before_script:
     - g++-7        --version
     - gcov-7       --version
     - git          --version
+    - java         -version
+    - java         --version
+    - javac        -version
+    - javac        --version
     - make         --version
     - valgrind     --version
     - sudo updatedb
