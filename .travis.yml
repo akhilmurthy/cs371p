@@ -1,3 +1,8 @@
+language: cpp
+
+compiler:
+    - gcc
+
 addons:
   apt:
     sources:
@@ -7,7 +12,6 @@ addons:
       - g++-7
       - libboost-all-dev
       - libgtest-dev
-      - oracle-java9-installer
       - valgrind
 
 before_install:
