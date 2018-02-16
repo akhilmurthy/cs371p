@@ -17,6 +17,12 @@ FILES :=                    \
     Consts                  \
     Arrays                  \
     Equal                   \
+    EqualT                  \
+    Fill                    \
+    FillT                   \
+    Copy                    \
+    CopyT                   \
+    Iterators               \
     Types
 
 %: %.c++

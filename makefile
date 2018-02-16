@@ -83,7 +83,10 @@ sync:
     --include "Equal.c++"                  \
     --include "EqualT.c++"                 \
     --include "Copy.c++"                   \
+    --include "CopyT.c++"                  \
     --include "Fill.c++"                   \
+    --include "FillT.c++"                  \
+    --include "Iterators.c++"              \
     --include "Types.c++"                  \
     --exclude "*"                          \
     ../../examples/c++/ examples
