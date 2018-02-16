@@ -23,13 +23,13 @@ int cycle_length (int n) {
     assert(c > 0);
     return c;}
 
-TEST(UnitTestsFixture, test_1) {
+TEST(UnitTestsFixture, test1) {
     ASSERT_EQ(cycle_length( 1), 1);}
 
-TEST(UnitTestsFixture, test_2) {
+TEST(UnitTestsFixture, test2) {
     ASSERT_EQ(cycle_length( 5), 6);}
 
-TEST(UnitTestsFixture, test_3) {
+TEST(UnitTestsFixture, test3) {
     ASSERT_EQ(cycle_length(10), 7);}
 
 /*
@@ -38,12 +38,12 @@ Running main() from gtest_main.cc
 [==========] Running 3 tests from 1 test case.
 [----------] Global test environment set-up.
 [----------] 3 tests from UnitTestsFixture
-[ RUN      ] UnitTestsFixture.test_1
-[       OK ] UnitTestsFixture.test_1 (0 ms)
-[ RUN      ] UnitTestsFixture.test_2
-[       OK ] UnitTestsFixture.test_2 (0 ms)
-[ RUN      ] UnitTestsFixture.test_3
-[       OK ] UnitTestsFixture.test_3 (0 ms)
+[ RUN      ] UnitTestsFixture.test1
+[       OK ] UnitTestsFixture.test1 (0 ms)
+[ RUN      ] UnitTestsFixture.test2
+[       OK ] UnitTestsFixture.test2 (0 ms)
+[ RUN      ] UnitTestsFixture.test3
+[       OK ] UnitTestsFixture.test3 (0 ms)
 [----------] 3 tests from UnitTestsFixture (0 ms total)
 
 [----------] Global test environment tear-down

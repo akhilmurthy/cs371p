@@ -21,29 +21,29 @@ bool is_prime (int n) {
             return false;
     return true;}
 
-TEST(IsPrimeFixture, test_1) {
+TEST(IsPrimeFixture, test1) {
     ASSERT_FALSE(is_prime( 1));}
 
-TEST(IsPrimeFixture, test_2) {
+TEST(IsPrimeFixture, test2) {
     ASSERT_TRUE(is_prime( 2));}
 
-TEST(IsPrimeFixture, test_3) {
+TEST(IsPrimeFixture, test3) {
     ASSERT_TRUE(is_prime( 3));}
 
-TEST(IsPrimeFixture, test_4) {
+TEST(IsPrimeFixture, test4) {
     ASSERT_FALSE(is_prime( 4));}
 
-TEST(IsPrimeFixture, test_5) {
+TEST(IsPrimeFixture, test5) {
     ASSERT_TRUE(is_prime( 5));}
 
-TEST(IsPrimeFixture, test_7) {
+TEST(IsPrimeFixture, test7) {
     ASSERT_TRUE(is_prime( 7));}
 
-TEST(IsPrimeFixture, test_9) {
+TEST(IsPrimeFixture, test9) {
     ASSERT_FALSE(is_prime( 9));}
 
-TEST(IsPrimeFixture, test_27) {
+TEST(IsPrimeFixture, test27) {
     ASSERT_FALSE(is_prime(27));}
 
-TEST(IsPrimeFixture, test_29) {
+TEST(IsPrimeFixture, test29) {
     ASSERT_TRUE(is_prime(29));}

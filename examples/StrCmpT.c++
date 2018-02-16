@@ -29,20 +29,20 @@ INSTANTIATE_TEST_CASE_P(
            strcmp,
         my_strcmp));
 
-TEST_P(StrCmpFixture, test_1) {
+TEST_P(StrCmpFixture, test1) {
     ASSERT_EQ(GetParam()("", ""), 0);}
 
-TEST_P(StrCmpFixture, test_2) {
+TEST_P(StrCmpFixture, test2) {
     ASSERT_EQ(GetParam()("abc", "abc"), 0);}
 
-TEST_P(StrCmpFixture, test_3) {
+TEST_P(StrCmpFixture, test3) {
     ASSERT_GT(GetParam()("abc", "ab"), 0);}
 
-TEST_P(StrCmpFixture, test_4) {
+TEST_P(StrCmpFixture, test4) {
     ASSERT_GT(GetParam()("abc", "aba"), 0);}
 
-TEST_P(StrCmpFixture, test_5) {
+TEST_P(StrCmpFixture, test5) {
     ASSERT_LT(GetParam()("ab", "abc"), 0);}
 
-TEST_P(StrCmpFixture, test_6) {
+TEST_P(StrCmpFixture, test6) {
     ASSERT_LT(GetParam()("aba", "abc"), 0);}
