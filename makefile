@@ -81,6 +81,7 @@ sync:
     --include "Consts.c++"                 \
     --include "Arrays1.c++"                \
     --include "Equal.c++"                  \
+    --include "EqualT.c++"                 \
     --include "Copy.c++"                   \
     --include "Fill.c++"                   \
     --include "Types.c++"                  \
