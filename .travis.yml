@@ -16,7 +16,6 @@ addons:
 
 before_install:
     - cat .travis.yml
-    - apt list --installed
 
 install:
     - pwd
@@ -41,8 +40,6 @@ before_script:
     - g++-7        --version
     - gcov-7       --version
     - git          --version
-    - java         -version
-    - javac        -version
     - make         --version
     - valgrind     --version
     - sudo updatedb

@@ -79,7 +79,7 @@ sync:
     --include "Variables.c++"              \
     --include "Arguments.c++"              \
     --include "Consts.c++"                 \
-    --include "Arrays.c++"                 \
+    --include "Arrays1.c++"                \
     --include "Equal.c++"                  \
     --include "Copy.c++"                   \
     --include "Fill.c++"                   \
