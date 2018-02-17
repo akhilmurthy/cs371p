@@ -88,6 +88,7 @@ sync:
     --include "FillT.c++"                  \
     --include "Iterators.c++"              \
     --include "Types.c++"                  \
+    --include "Factorial.c++"              \
     --exclude "*"                          \
     ../../examples/c++/ examples
 	@rsync -r -t -u -v --delete            \
