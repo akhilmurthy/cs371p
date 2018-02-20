@@ -12,6 +12,6 @@ class range_iterator {
 //          _v = v;}           // copy    assignment
 
         range_iterator (T v) : // copy constructor
-            _v  (v)
+            _v (v)
             {}
 

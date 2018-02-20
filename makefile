@@ -89,6 +89,7 @@ sync:
     --include "Iterators.c++"              \
     --include "Factorial.c++"              \
     --include "Types.c++"                  \
+    --include "RangeIterator.c++"          \
     --exclude "*"                          \
     ../../examples/c++/ examples
 	@rsync -r -t -u -v --delete            \
