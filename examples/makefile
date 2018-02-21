@@ -18,11 +18,13 @@ FILES :=                    \
     Arrays                  \
     Equal                   \
     EqualT                  \
-    Fill                    \
-    FillT                   \
     Copy                    \
     CopyT                   \
+    Fill                    \
+    FillT                   \
     Iterators               \
+    FactorialT              \
+    RangeIteratorT          \
     Types
 
 %: %.c++
