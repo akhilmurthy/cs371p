@@ -25,6 +25,7 @@ FILES :=                    \
     Iterators               \
     FactorialT              \
     RangeIteratorT          \
+    Accumulate              \
     Types
 
 %: %.c++

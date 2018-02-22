@@ -91,6 +91,8 @@ sync:
     --include "FactorialT.c++"             \
     --include "RangeIterator.c++"          \
     --include "RangeIteratorT.c++"         \
+    --include "Accumulate.c++"             \
+    --include "Range.c++"                  \
     --include "Types.c++"                  \
     --exclude "*"                          \
     ../../examples/c++/ examples
