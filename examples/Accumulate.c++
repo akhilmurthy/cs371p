@@ -13,11 +13,11 @@
 using namespace std;
 
 void test1 () {
-    const list<int>          x = {2, 3, 4};
+    const list<int> x = {2, 3, 4};
     assert(accumulate(begin(x), end(x), 0, plus<int>()) == 9);}
 
 void test2 () {
-    const list<int>          x = {2, 3, 4};
+    const list<int> x = {2, 3, 4};
     assert(accumulate(begin(x), end(x), 1, multiplies<int>()) == 24);}
 
 int main () {
