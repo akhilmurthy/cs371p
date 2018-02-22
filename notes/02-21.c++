@@ -3,14 +3,9 @@
 // -----------
 
 int i = 2;
-// different
+// different than
 int i;
 i = 2;
-
-T x = y();
-
-int i = 2;
-++++i;
 
 template <typename T>
 class RangeIterator {
@@ -19,7 +14,7 @@ class RangeIterator {
 
     public:
 //      RangeIterator (T v) { // default constructor
-//          _v = v;}           // copy    assignment
+//          _v = v;}          // copy    assignment
 
         RangeIterator (T v) : // copy constructor
             _v (v)
@@ -29,10 +24,14 @@ class RangeIterator {
             ...}
 
         ... operator ++ () { // pre-increment
-            ...}
+            ...
+            // return modified self
+            }
 
         ... operator ++ (int) { // post-increment
-            ...}
+            ...
+            // return unmodified self
+            }
 
         bool operator == (RangeIterator???) {
             ...}
@@ -48,18 +47,3 @@ int main () {
     x == y; -> x.operator==(y);
     ++x;    -> x.operator++();
     x++;    -> x.operator++(0);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
