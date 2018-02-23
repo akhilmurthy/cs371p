@@ -92,7 +92,9 @@ sync:
     --include "RangeIterator.c++"          \
     --include "RangeIteratorT.c++"         \
     --include "Accumulate.c++"             \
+    --include "AccumulateT.c++"            \
     --include "Range.c++"                  \
+    --include "RangeT.c++"                 \
     --include "Types.c++"                  \
     --exclude "*"                          \
     ../../examples/c++/ examples
