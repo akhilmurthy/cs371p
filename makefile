@@ -95,6 +95,8 @@ sync:
     --include "AccumulateT.c++"            \
     --include "Range.c++"                  \
     --include "RangeT.c++"                 \
+    --include "Transform.c++"              \
+    --include "Functions.c++"              \
     --include "Types.c++"                  \
     --exclude "*"                          \
     ../../examples/c++/ examples

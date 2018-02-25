@@ -28,6 +28,8 @@ FILES :=                    \
     Accumulate              \
     AccumulateT             \
     RangeT                  \
+    Transform               \
+    Functions               \
     Types
 
 %: %.c++
