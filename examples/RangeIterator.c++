@@ -30,8 +30,8 @@ void test3 () {
     RangeIterator<int> e = 3;
     assert(b  != e);
     assert(*b == 2);
-    RangeIterator<int>& x = ++b;
-    assert(&x == &b);
+    RangeIterator<int>& p = ++b;
+    assert(&p == &b);
     assert(b  == e);}
 
 void test4 () {
@@ -42,8 +42,8 @@ void test4 () {
     ++b;
     assert(b  != e);
     assert(*b == 3);
-    RangeIterator<int> x = b++;
-    assert(&x != &b);
+    RangeIterator<int> p = b++;
+    assert(&p != &b);
     assert(b  == e);}
 
 void test5 () {

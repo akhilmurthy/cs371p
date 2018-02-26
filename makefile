@@ -96,6 +96,7 @@ sync:
     --include "Range.c++"                  \
     --include "RangeT.c++"                 \
     --include "Transform.c++"              \
+    --include "TransformT.c++"             \
     --include "Functions.c++"              \
     --include "Types.c++"                  \
     --exclude "*"                          \

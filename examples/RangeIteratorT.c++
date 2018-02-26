@@ -57,8 +57,8 @@ TEST(RangeIteratorFixture, test_3) {
     RangeIterator<int> e = 3;
     ASSERT_NE(b,  e);
     ASSERT_EQ(*b, 2);
-    RangeIterator<int>& x = ++b;
-    ASSERT_EQ(&x, &b);
+    RangeIterator<int>& p = ++b;
+    ASSERT_EQ(&p, &b);
     ASSERT_EQ(b,  e);}
 
 TEST(RangeIteratorFixture, test_4) {
@@ -69,8 +69,8 @@ TEST(RangeIteratorFixture, test_4) {
     ++b;
     ASSERT_NE(b,  e);
     ASSERT_EQ(*b, 3);
-    RangeIterator<int> x = b++;
-    ASSERT_NE(&x, &b);
+    RangeIterator<int> p = b++;
+    ASSERT_NE(&p, &b);
     ASSERT_EQ(b,  e);}
 
 TEST(RangeIteratorFixture, test_5) {

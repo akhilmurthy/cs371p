@@ -29,6 +29,7 @@ FILES :=                    \
     AccumulateT             \
     RangeT                  \
     Transform               \
+    TransformT              \
     Functions               \
     Types
 
