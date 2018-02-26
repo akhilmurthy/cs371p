@@ -2,7 +2,7 @@
 // AccumulateT.c++
 // ---------------
 
-// http://www.cplusplus.com/reference/algorithm/accumulate/
+// http://en.cppreference.com/w/cpp/algorithm/accumulate
 
 #include <functional> // multiplies, plus
 #include <iostream>   // cout, endl

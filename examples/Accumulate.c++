@@ -2,7 +2,7 @@
 // Accumulate.c++
 // --------------
 
-// http://www.cplusplus.com/reference/algorithm/accumulate/
+// http://en.cppreference.com/w/cpp/algorithm/accumulate
 
 #include <cassert>    // assert
 #include <functional> // multiples, plus
