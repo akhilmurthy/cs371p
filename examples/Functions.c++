@@ -37,7 +37,29 @@ void test2 () {
     assert(p == begin(y) + 4);
     assert(equal(begin(y), end(y), begin({0, 4, 9, 16, 0})));}
 
+template <typename T>
+class square3  {
+    private:
+        T _n;
+
+    public:
+        square3 (const T& n) :
+                _n (n)
+            {}
+
+        T operator () (const T& x) const {
+            return pow(x, _n);}};
+
 void test3 () {
+    const list<int>           x = {2, 3, 4};
+    vector<int>               y(5);
+    const int                 n = 2;
+    const function<int (int)> f = square3<int>(n);
+    vector<int>::iterator p = transform(begin(x), end(x), begin(y) + 1, f);
+    assert(p == begin(y) + 4);
+    assert(equal(begin(y), end(y), begin({0, 4, 9, 16, 0})));}
+
+void test4 () {
     const list<int>           x = {2, 3, 4};
     vector<int>               y(5);
     const function<int (int)> f = [] (int x) -> int {return pow(x, 2);};
@@ -45,7 +67,7 @@ void test3 () {
     assert(p == begin(y) + 4);
     assert(equal(begin(y), end(y), begin({0, 4, 9, 16, 0})));}
 
-void test4 () {
+void test5 () {
     const list<int>           x = {2, 3, 4};
     vector<int>               y(5);
     const int                 n = 2;
@@ -54,7 +76,7 @@ void test4 () {
     assert(p == begin(y) + 4);
     assert(equal(begin(y), end(y), begin({0, 4, 9, 16, 0})));}
 
-void test5 () {
+void test6 () {
     const list<int>           x = {2, 3, 4};
     vector<int>               y(5);
     int                       n = 1;
@@ -64,7 +86,7 @@ void test5 () {
     assert(p == begin(y) + 4);
     assert(equal(begin(y), end(y), begin({0, 2, 3, 4, 0})));}
 
-void test6 () {
+void test7 () {
     const list<int>           x = {2, 3, 4};
     vector<int>               y(5);
     int                       n = 1;
@@ -82,5 +104,6 @@ int main () {
     test4();
     test5();
     test6();
+    test7();
     cout << "Done." << endl;
     return 0;}
