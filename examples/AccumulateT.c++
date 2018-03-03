@@ -33,10 +33,10 @@ INSTANTIATE_TEST_CASE_P(
            accumulate<list<int>::const_iterator, int, function<int (int, int)>>,
         my_accumulate<list<int>::const_iterator, int, function<int (int, int)>>));
 
-TEST_P(Accumulate_List_Fixture, test_1) {
+TEST_P(Accumulate_List_Fixture, test1) {
     const list<int> x = {2, 3, 4};
     ASSERT_EQ(GetParam()(begin(x), end(x), 0, plus<int>()), 9);}
 
-TEST_P(Accumulate_List_Fixture, test_2) {
+TEST_P(Accumulate_List_Fixture, test2) {
     const list<int> x = {2, 3, 4};
     ASSERT_EQ(GetParam()(begin(x), end(x), 1, multiplies<int>()), 24);}

@@ -60,13 +60,13 @@ bool my_equal (II1 b, II1 e, II2 c) {
         ++c;}
     return true;}
 
-TEST(RangeFixture, test_1) {
+TEST(RangeFixture, test1) {
     const Range<int> x(2, 2);
     const Range<int>::iterator b = begin(x);
     const Range<int>::iterator e = end(x);
     ASSERT_EQ(b, e);}
 
-TEST(RangeFixture, test_2) {
+TEST(RangeFixture, test2) {
     Range<int> x(2, 3);
     Range<int>::iterator b = begin(x);
     Range<int>::iterator e = end(x);
@@ -76,7 +76,7 @@ TEST(RangeFixture, test_2) {
     ASSERT_EQ(&y, &b);
     ASSERT_EQ(b, e);}
 
-TEST(RangeFixture, test_3) {
+TEST(RangeFixture, test3) {
     Range<int> x(2, 4);
     Range<int>::iterator b = begin(x);
     Range<int>::iterator e = end(x);
@@ -88,11 +88,11 @@ TEST(RangeFixture, test_3) {
     b++;
     ASSERT_EQ(b, e);}
 
-TEST(RangeFixture, test_4) {
+TEST(RangeFixture, test4) {
     Range<int> x(2, 5);
     ASSERT_TRUE(my_equal(begin(x), end(x), begin({2, 3, 4})));}
 
-TEST(RangeFixture, test_5) {
+TEST(RangeFixture, test5) {
     Range<int> x(2, 5);
     int s = 0;
     for (int v : x)
