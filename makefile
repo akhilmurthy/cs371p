@@ -39,6 +39,7 @@ push:
 	git add makefile
 	git add notes
 	git add projects/collatz
+	git add projects/allocator
 	git commit -m "another commit"
 	git push
 	git status
