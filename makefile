@@ -99,6 +99,7 @@ sync:
     --include "Transform.c++"              \
     --include "TransformT.c++"             \
     --include "Functions.c++"              \
+    --include "Arrays2.c++"                \
     --include "Types.c++"                  \
     --exclude "*"                          \
     ../../examples/c++/ examples

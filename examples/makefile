@@ -31,6 +31,7 @@ FILES :=                    \
     Transform               \
     TransformT              \
     Functions               \
+    Arrays2                 \
     Types
 
 %: %.c++
