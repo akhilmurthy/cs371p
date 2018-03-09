@@ -1,6 +1,6 @@
-// ----------
-// Arrays.c++
-// ----------
+// -----------
+// Arrays2.c++
+// -----------
 
 #include <algorithm> // copy, count, equal, fill
 #include <cassert>   // assert
