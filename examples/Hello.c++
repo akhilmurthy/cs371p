@@ -16,6 +16,12 @@ int main () {
 Developed in 1978 by Bjarne Stroustrup of Denmark.
 C++ is procedural, object-oriented, statically typed, and not garbage collected.
 
+C++98
+C++03
+C++11
+C++14
+C++17
+
 
 
 % which g++-7
