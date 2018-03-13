@@ -100,6 +100,7 @@ sync:
     --include "TransformT.c++"             \
     --include "Functions.c++"              \
     --include "Arrays2.c++"                \
+    --include "Vector1.c++"                \
     --include "Types.c++"                  \
     --exclude "*"                          \
     ../../examples/c++/ examples

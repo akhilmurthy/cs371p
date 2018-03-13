@@ -32,6 +32,7 @@ FILES :=                    \
     TransformT              \
     Functions               \
     Arrays2                 \
+    Vector1                 \
     Types
 
 %: %.c++
