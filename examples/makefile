@@ -33,6 +33,7 @@ FILES :=                    \
     Functions               \
     Arrays2                 \
     Vector1                 \
+    Vector2                 \
     Types
 
 %: %.c++
