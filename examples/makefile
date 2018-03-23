@@ -33,6 +33,7 @@ FILES :=                    \
     Functions               \
     Arrays2                 \
     Vector1                 \
+    Vector1T                \
     Vector2                 \
     Types
 

@@ -101,6 +101,7 @@ sync:
     --include "Functions.c++"              \
     --include "Arrays2.c++"                \
     --include "Vector1.c++"                \
+    --include "Vector1T.c++"               \
     --include "Vector2.c++"                \
     --include "Types.c++"                  \
     --include "Shapes1.c++"                \
