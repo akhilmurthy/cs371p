@@ -40,6 +40,7 @@ push:
 	git add notes
 	git add projects/collatz
 	git add projects/allocator
+	git add projects/darwin
 	git commit -m "another commit"
 	git push
 	git status
@@ -125,6 +126,12 @@ sync:
     --include "TestAllocator.c++"          \
     --exclude "*"                          \
     ../../projects/c++/allocator/ projects/allocator
+	@rsync -r -t -u -v --delete            \
+    --include "RunDarwin.c++"              \
+    --include "RunDarwin.in"               \
+    --include "RunDarwin.out"              \
+    --exclude "*"                          \
+    ../../projects/c++/darwin/ projects/darwin
 
 travis:
 	cd examples; make travis

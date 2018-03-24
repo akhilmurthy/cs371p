@@ -21,12 +21,14 @@
 
 int main () {
     using namespace std;
-    // read  RunAllocator.in
-    // write RunAllocator.out
 
     // replace!
     ifstream f("RunAllocator.out");
     string   s;
     while (getline(f, s))
         cout << s << endl;
+
+    // read  from stdin,  redirect from RunDarwin.in
+    // write to   stdout, redirect to   RunDarwin.out
+
     return 0;}
