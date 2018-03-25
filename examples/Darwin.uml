@@ -14,12 +14,12 @@ class Creature {
     - Species _s
     - enum _d
     - int _pc
-    + take_turn ()
+    + eval ()
     }
 
 class Species {
     - pair<int, int> _p
-    + execute ()
+    + eval ()
     }
 
 @enduml
