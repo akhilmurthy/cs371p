@@ -110,6 +110,11 @@ sync:
     --exclude "*"                          \
     ../../examples/c++/ examples
 	@rsync -r -t -u -v --delete            \
+    --include "Darwin.uml"                 \
+    --include "Darwin.png"                 \
+    --exclude "*"                          \
+    ../../examples/uml/ examples
+	@rsync -r -t -u -v --delete            \
     --include "Collatz.c++"                \
     --include "Collatz.h"                  \
     --include "RunCollatz.c++"             \
