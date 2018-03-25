@@ -1,6 +1,6 @@
 @startuml
-Darwin   *- Creature
-Creature o- Species
+Darwin   "1" *- "*" Creature
+Creature "1" o- "1" Species
 
 class Darwin {
     - vector<Creature> _creatures
@@ -18,7 +18,7 @@ class Creature {
     }
 
 class Species {
-    - pair<int, int> _p
+    - vector<pair<int, int>> _p
     + eval ()
     }
 
