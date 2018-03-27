@@ -35,6 +35,9 @@ FILES :=                    \
     Vector1                 \
     Vector1T                \
     Vector2                 \
+    FunctionOverloading     \
+    Move                    \
+    Vector3                 \
     Types
 
 %: %.c++
