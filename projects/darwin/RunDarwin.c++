@@ -73,4 +73,6 @@ int main () {
     // read  from stdin,  redirect from RunDarwin.in
     // write to   stdout, redirect to   RunDarwin.out
 
+    // The correct handling of duplicate critters is to overwrite the old critter in that particular (x, y) position.
+
     return 0;}
