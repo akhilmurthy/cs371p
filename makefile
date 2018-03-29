@@ -104,6 +104,7 @@ sync:
     --include "Vector1.c++"                \
     --include "Vector1T.c++"               \
     --include "Vector2.c++"                \
+    --include "Vector2T.c++"               \
     --include "FunctionOverloading.c++"    \
     --include "Move.c++"                   \
     --include "Vector3.c++"                \

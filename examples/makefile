@@ -35,6 +35,7 @@ FILES :=                    \
     Vector1                 \
     Vector1T                \
     Vector2                 \
+    Vector2T                \
     FunctionOverloading     \
     Move                    \
     Vector3                 \
