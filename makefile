@@ -108,6 +108,7 @@ sync:
     --include "FunctionOverloading.c++"    \
     --include "Move.c++"                   \
     --include "Vector3.c++"                \
+    --include "Vector4.c++"                \
     --include "Types.c++"                  \
     --include "Shapes1.c++"                \
     --include "Shapes2.c++"                \
