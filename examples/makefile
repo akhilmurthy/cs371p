@@ -39,6 +39,7 @@ FILES :=                    \
     FunctionOverloading     \
     Move                    \
     Vector3                 \
+    Vector3T                \
     Vector4                 \
     Types
 
