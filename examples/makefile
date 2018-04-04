@@ -41,6 +41,7 @@ FILES :=                    \
     Vector3                 \
     Vector3T                \
     Vector4                 \
+    Vector4T                \
     Types
 
 %: %.c++

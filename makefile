@@ -111,6 +111,7 @@ sync:
     --include "Vector3T.c++"               \
     --include "Memory.h"                   \
     --include "Vector4.c++"                \
+    --include "Vector4T.c++"               \
     --include "Types.c++"                  \
     --include "Shapes1.c++"                \
     --include "Shapes2.c++"                \
