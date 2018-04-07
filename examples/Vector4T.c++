@@ -72,9 +72,9 @@ class my_vector {
         using const_iterator  = typename allocator_type::const_pointer;
 
     private:
-        allocator_type _a;
         pointer        _b = nullptr;
         pointer        _e = nullptr;
+        allocator_type _a;
 
     public:
         my_vector () :

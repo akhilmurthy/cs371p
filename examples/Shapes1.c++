@@ -4,102 +4,11 @@
 
 #include <cassert>  // assert
 #include <iostream> // cout, endl, istream, ostream
+#include <sstream>  // istringstream, ostringstream
 #include <utility>  // !=
 
 using namespace std;
 using rel_ops::operator!=;
-
-class Shape {
-    friend bool operator == (const Shape& lhs, const Shape& rhs) {
-        return (lhs._x == rhs._x) && (lhs._y == rhs._y);}
-
-    friend istream& operator >> (istream& lhs, Shape& rhs) {
-        return lhs >> rhs._x >> rhs._y;}
-
-    friend ostream& operator << (ostream& lhs, const Shape& rhs) {
-        return lhs << rhs._x << " " << rhs._y;}
-
-    private:
-        int _x;
-        int _y;
-
-    public:
-        Shape (int x, int y) :
-                _x (x),
-                _y (y)
-            {}
-
-        Shape (const Shape&) = default;
-/*
-        Shape (const Shape& rhs) :
-                _x (rhs._x),
-                _y (rhs._y)
-            {}
-*/
-        ~Shape () = default;
-/*
-        ~Shape ()
-            {}
-*/
-        Shape& operator = (const Shape&) = default;
-/*
-        Shape& operator = (const Shape& rhs) {
-            _x = rhs._x;
-            _y = rhs._y;
-            return *this;}
-*/
-
-        double area () const {
-            return 0;}
-
-        void move (int x, int y) {
-            _x = x;
-            _y = y;}};
-
-class Circle : public Shape {
-    friend bool operator == (const Circle& lhs, const Circle& rhs) {
-        return (static_cast<const Shape&>(lhs) == rhs) && (lhs._r == rhs._r);}
-
-    friend istream& operator >> (istream& lhs, Circle& rhs) {
-        return lhs >> static_cast<Shape&>(rhs) >> rhs._r;}
-
-    friend ostream& operator << (ostream& lhs, const Circle& rhs) {
-        return lhs << static_cast<const Shape&>(rhs) << " " << rhs._r;}
-
-    private:
-        int _r;
-
-    public:
-        Circle (int x, int y, int r) :
-                Shape (x, y),
-                _r    (r)
-            {}
-
-        Circle (const Circle&) = default;
-/*
-        Circle (const Circle& rhs) :
-                Shape (rhs),
-                _r    (rhs._r)
-            {}
-*/
-        ~Circle () = default;
-/*
-        ~Circle ()
-            {}
-*/
-        Circle& operator = (const Circle&) = default;
-/*
-        Circle& operator = (const Circle& rhs) {
-            Shape::operator=(rhs);
-            _r = rhs._r;
-            return *this;}
-*/
-
-        double area () const {
-            return 3.14 * _r * _r;}
-
-        int radius () const {
-            return _r;}};
 
 void test1 () {
     Shape x(2, 3);
@@ -171,6 +80,19 @@ void test8 () {
 //  p[1].area();                                           // illdefined
     }
 
+void test9 () {
+    istringstream sin("4 5");
+    Shape x(2, 3);
+    sin >> x;
+    Shape y(4, 5);
+    assert(x == y);}
+
+void test10 () {
+    ostringstream sout;
+    Shape x(2, 3);
+    sout << x;
+    assert(sout.str() == "2 3");}
+
 int main () {
     cout << "Shapes1.c++" << endl;
     test1();
@@ -181,5 +103,7 @@ int main () {
     test6();
     test7();
     test8();
+    test9();
+    test10();
     cout << "Done." << endl;
     return 0;}
