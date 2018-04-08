@@ -41,6 +41,7 @@ push:
 	git add projects/collatz
 	git add projects/allocator
 	git add projects/darwin
+	git add projects/life
 	git commit -m "another commit"
 	git push
 	git status
