@@ -2,8 +2,8 @@
 Vector <|-- Stack
 
 class Vector {
-    + void add ()
-    + void removeElement ()
+    + void push_back ()
+    + void pop_back ()
     }
 
 class Stack {
