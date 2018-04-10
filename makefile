@@ -121,12 +121,16 @@ sync:
 	@rsync -r -t -u -v --delete            \
     --include "Darwin.uml"                 \
     --include "Darwin.png"                 \
+    --include "Stack.uml"                  \
+    --include "Stack.png"                  \
     --include "LifeCC.uml"                 \
     --include "LifeCC.png"                 \
     --include "LifeFC.uml"                 \
     --include "LifeFC.png"                 \
     --include "LifeC.uml"                  \
     --include "LifeC.png"                  \
+    --include "Shapes1.uml"                \
+    --include "Shapes1.png"                \
     --exclude "*"                          \
     ../../examples/uml/ examples
 	@rsync -r -t -u -v --delete            \
