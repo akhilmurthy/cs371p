@@ -105,5 +105,7 @@ int main () {
     test6();
     test7();
     test8();
+    test9();
+    test10();
     cout << "Done." << endl;
     return 0;}
