@@ -4,8 +4,8 @@ Shape <|-- Circle
 class Shape {
     - int x
     - int y
-    # virtual bool equals (const Shape&) const;
     + friend bool operator == (const Shape&, const Shape&);
+    # virtual bool equals (const Shape&) const;
     + Shape (int x, int y)
     + virtual ~Shape ()
     + virtual double area () const
@@ -14,8 +14,8 @@ class Shape {
 
 class Circle {
     - int r
-    # bool equals (const Shape&) const;
     + friend bool operator == (const Circle&, const Circle&);
+    # bool equals (const Shape&) const;
     + Circle (int x, int y, int r)
     + double area () const
     + int radius () const

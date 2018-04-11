@@ -132,6 +132,8 @@ sync:
     --include "LifeC.png"                  \
     --include "Shapes1.uml"                \
     --include "Shapes1.png"                \
+    --include "Shapes2.uml"                \
+    --include "Shapes2.png"                \
     --exclude "*"                          \
     ../../examples/uml/ examples
 	@rsync -r -t -u -v --delete            \
