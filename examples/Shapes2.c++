@@ -4,94 +4,13 @@
 
 #include <cassert>  // assert
 #include <iostream> // cout, endl, istream, ostream
+#include <sstream>  // istringstream, ostringstream
 #include <utility>  // !=
 
 #include "gtest/gtest.h"
 
 using namespace std;
 using rel_ops::operator!=;
-
-class Shape {
-    friend bool operator == (const Shape& lhs, const Shape& rhs) {
-        return lhs.equals(rhs);}
-
-    friend istream& operator >> (istream& lhs, Shape& rhs) {
-        return rhs.read(lhs);}
-
-    friend ostream& operator << (ostream& lhs, const Shape& rhs) {
-        return rhs.write(lhs);}
-
-    private:
-        int _x;
-        int _y;
-
-    protected:
-        virtual bool equals (const Shape& rhs) const {
-            return (_x == rhs._x) && (_y == rhs._y);}
-
-        virtual istream& read (istream& in) {
-            return in >> _x >> _y;}
-
-        virtual ostream& write (ostream& out) const {
-            return out << _x << " " << _y;}
-
-    public:
-        Shape (int x, int y) :
-                _x (x),
-                _y (y)
-            {}
-
-        Shape             (const Shape&) = default;
-        virtual ~Shape    ()             = default;
-        Shape& operator = (const Shape&) = default;
-
-        virtual double area () const {
-            return 0;}
-
-        void move (int x, int y) {
-            _x = x;
-            _y = y;}};
-
-class Circle : public Shape {
-    friend bool operator == (const Circle& lhs, const Circle& rhs) {
-        return lhs.Shape::equals(rhs) && (lhs._r == rhs._r);}
-
-    friend istream& operator >> (istream& lhs, Circle& rhs) {
-        return rhs.read(lhs);}
-
-    friend ostream& operator << (ostream& lhs, const Circle& rhs) {
-        return rhs.write(lhs);}
-
-    private:
-        int _r;
-
-    protected:
-        bool equals (const Shape& rhs) const override {
-            if (const Circle* const p = dynamic_cast<const Circle*>(&rhs))
-                return Shape::equals(*p) && (_r == p->_r);
-            return false;}
-
-        istream& read (istream& in) override {
-            return Shape::read(in) >> _r;}
-
-        ostream& write (ostream& out) const override {
-            return Shape::write(out) << " " << _r;}
-
-    public:
-        Circle (int x, int y, int r) :
-                Shape (x, y),
-                _r    (r)
-            {}
-
-        Circle             (const Circle&) = default;
-        ~Circle            ()              = default;
-        Circle& operator = (const Circle&) = default;
-
-        double area () const override {
-            return 3.14 * _r * _r;}
-
-        int radius () const {
-            return _r;}};
 
 void test1 () {
     Shape x(2, 3);
@@ -162,6 +81,19 @@ void test8 () {
     assert(p[0].area() == 3.14 * 4 * 4);
 //  p[1].area();                                           // illdefined
     }
+
+void test9 () {
+    istringstream sin("4 5");
+    Shape x(2, 3);
+    sin >> x;
+    Shape y(4, 5);
+    assert(x == y);}
+
+void test10 () {
+    ostringstream sout;
+    Shape x(2, 3);
+    sout << x;
+    assert(sout.str() == "2 3");}
 
 int main () {
     cout << "Shapes2.c++" << endl;
