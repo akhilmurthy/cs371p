@@ -42,7 +42,8 @@ FILES :=                    \
     Vector3T                \
     Vector4                 \
     Vector4T                \
-    Types
+    Types                   \
+    Shapes1T
 
 %: %.c++
 	-clang-check -extra-arg=-std=c++11          $< --

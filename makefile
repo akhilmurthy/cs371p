@@ -115,6 +115,7 @@ sync:
     --include "Vector4T.c++"               \
     --include "Types.c++"                  \
     --include "Shapes1.c++"                \
+    --include "Shapes1T.c++"               \
     --include "Shapes2.c++"                \
     --exclude "*"                          \
     ../../examples/c++/ examples
