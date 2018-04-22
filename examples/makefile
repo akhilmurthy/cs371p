@@ -43,7 +43,10 @@ FILES :=                    \
     Vector4                 \
     Vector4T                \
     Types                   \
-    Shapes1T
+    Shapes1T                \
+    MethodOverriding1       \
+    MethodOverriding2       \
+    Shapes2T
 
 %: %.c++
 	-clang-check -extra-arg=-std=c++11          $< --

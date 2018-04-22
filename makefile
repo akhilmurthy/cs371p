@@ -116,8 +116,10 @@ sync:
     --include "Types.c++"                  \
     --include "Shapes1.c++"                \
     --include "Shapes1T.c++"               \
+    --include "MethodOverriding1.c++"      \
     --include "Shapes2.c++"                \
     --include "Shapes2T.c++"               \
+    --include "MethodOverriding2.c++"      \
     --include "Shapes3.c++"                \
     --exclude "*"                          \
     ../../examples/c++/ examples
