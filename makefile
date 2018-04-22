@@ -117,6 +117,8 @@ sync:
     --include "Shapes1.c++"                \
     --include "Shapes1T.c++"               \
     --include "Shapes2.c++"                \
+    --include "Shapes2T.c++"               \
+    --include "Shapes3.c++"                \
     --exclude "*"                          \
     ../../examples/c++/ examples
 	@rsync -r -t -u -v --delete            \
@@ -136,6 +138,8 @@ sync:
     --include "Shapes1.png"                \
     --include "Shapes2.uml"                \
     --include "Shapes2.png"                \
+    --include "Shapes3.uml"                \
+    --include "Shapes3.png"                \
     --exclude "*"                          \
     ../../examples/uml/ examples
 	@rsync -r -t -u -v --delete            \

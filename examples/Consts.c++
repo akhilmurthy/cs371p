@@ -23,7 +23,7 @@ void test2 () {
 void test3 () {
     // read/write, many-location pointer
     // mutable int, mutable pointer
-    int       i  = 2;
+          int i  = 2;
     const int ci = 3;
     int*      p;
     p = &i;
@@ -35,7 +35,7 @@ void test3 () {
 void test4 () {
     // read-only, many-location pointer
     // immutable int, mutable pointer
-    int        i  = 2;
+          int  i  = 2;
     const int  ci = 3;
     const int* pc;
     pc = &ci;
@@ -52,7 +52,7 @@ void test4 () {
 void test5 () {
     // read/write, one-location pointer
     // mutable int, immutable pointer
-    int        i  = 2;
+          int  i  = 2;
     const int  ci = 3;
 //  int* const cp;       // error: uninitialized const 'cp'
 //  int* const cp = &ci; // error: invalid conversion from 'const int*' to 'int*'
@@ -65,7 +65,7 @@ void test5 () {
 void test6 () {
     // read-only, one-location pointer
     // immutable int, immutable pointer
-    int              i   = 2;
+          int        i   = 2;
     const int        ci  = 3;
     const int* const cpc = &ci;
     const int* const cqc = &i;
@@ -77,7 +77,7 @@ void test6 () {
     // read/write reference
     // mutable int
 void test7 () {
-    int       i  = 2;
+          int i  = 2;
     const int ci = 3;
 //  int&      r;      // error: 'r' declared as reference but not initialized
 //  int&      r = ci; // error: invalid initialization of reference of type 'int&' from expression of type 'const int'
@@ -89,7 +89,7 @@ void test7 () {
 void test8 () {
     // read-only reference
     // immutable int
-    int        i  = 2;
+          int  i  = 2;
     const int  ci = 3;
     const int& rc = ci;
     const int& sc = i;
