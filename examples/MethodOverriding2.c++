@@ -28,17 +28,18 @@ struct B : A {
     std::string h (int) const /* override */ { // error: non-virtual member function marked 'override' hides virtual member function
         return "B::h";}};
 
-int main () {
-    using namespace std;
-    cout << "MethodOverriding2.c++" << endl;
-
+void test () {
     A* const p = new B();
 
     assert(p->f(2) == "B::f");
     assert(p->g(2) == "A::g");
     assert(p->h(2) == "A::h");
 
-    delete p;
+    delete p;}
 
+int main () {
+    using namespace std;
+    cout << "MethodOverriding2.c++" << endl;
+    test();
     cout << "Done." << endl;
     return 0;}

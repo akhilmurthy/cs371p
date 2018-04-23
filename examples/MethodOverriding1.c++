@@ -26,6 +26,16 @@ struct B : A {
     std::string h (double) {
         return "B::h";}};
 
+void test1 () {
+    B x;
+
+    assert(x.f(2)    == "B::f");
+
+//  assert(x.g(2)    == "A::g"); // doesn't compile
+    assert(x.A::g(2) == "A::g");
+
+    assert(x.h(2)    == "B::h");}
+
 struct C : A {
    using A::g;
    using A::h;
@@ -39,28 +49,17 @@ struct C : A {
     std::string h (double) {
         return "C::h";}};
 
-int main () {
-    using namespace std;
-    cout << "MethodOverriding1.c++" << endl;
-
-    {
-    B x;
-
-    assert(x.f(2)    == "B::f");
-
-//  assert(x.g(2)    == "A::g"); // doesn't compile
-    assert(x.A::g(2) == "A::g");
-
-    assert(x.h(2)    == "B::h");
-    }
-
-    {
+void test2 () {
     C x;
 
     assert(x.f(2) == "C::f");
     assert(x.g(2) == "A::g");
-    assert(x.h(2) == "A::h");
-    }
+    assert(x.h(2) == "A::h");}
 
+int main () {
+    using namespace std;
+    cout << "MethodOverriding1.c++" << endl;
+    test1();
+    test2();
     cout << "Done." << endl;
     return 0;}
