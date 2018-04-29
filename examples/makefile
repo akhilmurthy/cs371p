@@ -46,7 +46,13 @@ FILES :=                    \
     Shapes1T                \
     MethodOverriding1       \
     MethodOverriding2       \
-    Shapes2T
+    Shapes2T                \
+    Shapes3T                \
+    Handle1T                \
+    Handle2T                \
+    Handle3T                \
+    UniquePtr               \
+    SharedPtr
 
 %: %.c++
 	-clang-check -extra-arg=-std=c++11          $< --

@@ -121,6 +121,12 @@ sync:
     --include "Shapes2T.c++"               \
     --include "MethodOverriding2.c++"      \
     --include "Shapes3.c++"                \
+    --include "Shapes3T.c++"               \
+    --include "Handle1T.c++"               \
+    --include "Handle2T.c++"               \
+    --include "Handle3T.c++"               \
+    --include "UniquePtr.c++"              \
+    --include "SharedPtr.c++"              \
     --exclude "*"                          \
     ../../examples/c++/ examples
 	@rsync -r -t -u -v --delete            \
