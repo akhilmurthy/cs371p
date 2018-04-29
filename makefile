@@ -148,6 +148,12 @@ sync:
     --include "Shapes2.png"                \
     --include "Shapes3.uml"                \
     --include "Shapes3.png"                \
+    --include "Handle1.uml"                \
+    --include "Handle1.png"                \
+    --include "Handle2.uml"                \
+    --include "Handle2.png"                \
+    --include "Handle3.uml"                \
+    --include "Handle3.png"                \
     --exclude "*"                          \
     ../../examples/uml/ examples
 	@rsync -r -t -u -v --delete            \
